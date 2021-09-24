@@ -39,66 +39,6 @@ header{
 
 
 
-
-
-
-.nav_btn div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
-.nav_btn{
-    display: none;
-    cursor: pointer;
-}
-@media screen and (max-width:768px) {
-    
-    body{
-        overflow-x: hidden;
-    }
-    .nav_links{
-position:absolute; 
-right: 0px;
-height: 92vh;
-top: 6vh;
-background-color: rgb(0, 0, 0);
-display: none;
-flex-direction:column;
-align-items: center;
-width: 25%;
-transform: translate(100%);
-transition: traform 0.5s ease-out;
-   }
-  
-   .nav_links li{
-   opacity: 0;
-   margin-top: 10vh;
-   display: none;
-}
-.nav_btn{
-    display: block;
-    
-}
-
-}
-
-.nav-active{
-    transform: translate(0%);
-
-}
-
-@keyframes navLinkFade{
-    from{
-opacity: 0;
-transform: translate(50px);
-    }to{
-opacity: 1;
-transform: translate(0px);
-    }
-}
-
-
 @media screen and (max-width:1024px) {
     .nav_links{
         list-style: none;

@@ -66,12 +66,7 @@ export default function Nav() {
                     </li>
 
                 </ul>
-                <div className=" nav_btn">
-                <div className="link"></div>
-                <div className="link"></div>
-                <div className="link"></div>
-                
-            </div >
+              
             </nav>
         
         </header >
