@@ -2,7 +2,6 @@ const navSlide = () => {
     const navbtn = document.querySelector('.nav_btn');
     const nav = document.querySelector('.nav_links');
     const navlinks = document.querySelectorAll('.nav_links li');
-    nav.style.display = 'none';
     
     navbtn.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
