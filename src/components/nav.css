@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-li,.Link,button{
+li{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -37,15 +37,23 @@ header{
     padding:0px 20px;
 }
 
-
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:600px) {
     .nav_links{
         list-style: none;
+            
     }
     .nav_links li{
         display: inline-block;
-        padding:0px 20px;
+        padding:0px 7px;
+    }
+    
+    .logo{
+        cursor: pointer;
+        height: 40px;
+        width: 70px;
+        margin-right: auto;   
+        margin-left: 6px;
     }
    
 }
+
