@@ -28,11 +28,13 @@ export default class Allpsot extends Component {
                 <h1 className="post">Content</h1>
                     <div className="gird">
                     {this.state.posts.map(post=>
-                    <Link to={"/details/"+post._id} style={{textDecoration:"none"}}>
                 <div className="card">
+                                        <Link to={"/details/"+post._id} style={{textDecoration:"none"}}>
+
                     <h2>{post.title}</h2>
                     <h4>{post.description}</h4>
-                </div></Link>
+               </Link>
+               </div>
                 
               )}
         </div>
