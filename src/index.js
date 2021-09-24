@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
-axios.defaults.baseURL="http://localhost:5000/";
+axios.defaults.baseURL="https://shaon-blog.herokuapp.com/";
 
 ReactDOM.render(
   <React.StrictMode>
