@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from "axios";
 import "./post.css";
 import {Link} from "react-router-dom";
-
+import HomeCarousel from './HomeCarousel';
 export default class Allpsot extends Component {
     constructor(){
         super();
@@ -23,17 +23,19 @@ export default class Allpsot extends Component {
        }
 
     render() {
-        return (
+        
+        return (            
             <div>
-                <h1 className="post">Content</h1>
-                    <div className="gird">
+                 <HomeCarousel/>               
+                    <div className="girds">
                     {this.state.posts.map(post=>
-                <div className="card">
-                                        <Link to={"/details/"+post._id} style={{textDecoration:"none"}}>
-
+                <div className="cards">
+                 <Link to={"/details/"+post._id} style={{textDecoration:"none"}}>
+                 <img className='boximg' src={"http://localhost:8000/uploads/image/"+post.picture} alt=""/>  
                     <h2>{post.title}</h2>
-                    <h4>{post.description}</h4>
-               </Link>
+                    <h4>{post.description}</h4>              
+               </Link>        
+
                </div>
                 
               )}

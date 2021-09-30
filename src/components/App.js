@@ -8,7 +8,7 @@ import Postdetails from "./Postdetails";
 function App() {
   return (
 <Router>
-<Nav/>   
+<Nav/>  
 <Switch>
    <Route exact path="/details/:postId" component={Postdetails}/>
    <Route exact path="/contact" component={About}/>

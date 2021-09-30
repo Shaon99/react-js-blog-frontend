@@ -1,7 +1,27 @@
-export default function Postdetails(){
+import React ,{useEffect,useState} from 'react'
+import "./post.css"
+
+export default function Postdetails(props){
+    const [data,setData]=useState([])
+        useEffect( async ()=>{
+         let result= await fetch("http://localhost:8000/posts/"+props.match.params.postId);
+         result=await result.json();
+         setData(result);     
+        },[])
+
+
+    function format(){
+            var option={year:"numeric",month:'long',day:'numeric'}
+            return new Date().toLocaleDateString([],option);
+        }
     return(
-        <div>
-            <h1>This is Details Page</h1>
-        </div>
-    );
+    <div>
+        <div className="container mt-3">
+        <img  className="i" src={"http://localhost:8000/uploads/image/"+data.picture} alt=""/>  
+        <p>{format(data.date)}</p>
+        <h2 className="t">{data.title}</h2>
+        <h4 className="d">{data.description}</h4>             
+       </div>           
+</div>
+);
 }
