@@ -17,7 +17,7 @@ export default function Postdetails(props){
     return(
     <div>
         <div className="container mt-3">
-        <img  className="i" src={"http://localhost:8000/uploads/image/"+data.picture} alt=""/>  
+        <img  className="i" src={"https://shaon-blog.herokuapp.com/uploads/image/"+data.picture} alt=""/>  
         <p>{format(data.date)}</p>
         <h2 className="t">{data.title}</h2>
         <h4 className="d">{data.description}</h4>             
