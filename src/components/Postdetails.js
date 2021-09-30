@@ -4,7 +4,7 @@ import "./post.css"
 export default function Postdetails(props){
     const [data,setData]=useState([])
         useEffect( async ()=>{
-         let result= await fetch("http://localhost:8000/posts/"+props.match.params.postId);
+         let result= await fetch("https://shaon-blog.herokuapp.com/posts/"+props.match.params.postId);
          result=await result.json();
          setData(result);     
         },[])
