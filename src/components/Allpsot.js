@@ -33,7 +33,7 @@ export default class Allpsot extends Component {
                     {this.state.posts.map(post=>
                 <div className="cards">
                  <Link to={"/details/"+post._id} style={{textDecoration:"none"}}>
-                 <img className='boximg' src={"http://localhost:8000/uploads/image/"+post.picture} alt=""/>  
+                 <img className='boximg' src={"https://shaon-blog.herokuapp.com/uploads/image/"+post.picture} alt=""/>  
                     <h2>{post.title}</h2>
                     <h4>{post.description}</h4>              
                </Link>        

@@ -14,7 +14,7 @@ export default function Postdetails(props){
 //getdata
     const [data,setData]=useState([''])
         useEffect( async ()=>{
-         let result= await fetch("http://localhost:8000/posts/"+props.match.params.postId);
+         let result= await fetch("https://shaon-blog.herokuapp.com/posts/"+props.match.params.postId);
          result=await result.json();
          setData(result);     
         },[])
@@ -23,7 +23,7 @@ export default function Postdetails(props){
 //getcommentdata
     const [allComment,setComments]=useState([''])
     useEffect( async ()=>{
-     let result= await fetch("http://localhost:8000/posts/allcomment");
+     let result= await fetch("https://shaon-blog.herokuapp.com/posts/allcomment");
      result=await result.json();
      setComments(result);     
      console.log(result);
@@ -51,9 +51,9 @@ const submitData=(e)=>{
 
     return(
     <div>
-     <div className="container mt-3">
-        <img  className="i" src={"http://localhost:8000/uploads/image/"+data.picture} alt=""/>  
-        <p>{moment(data.date).format('LLLL')}</p>
+        <div className="container mt-3">
+        <img  className="i" src={"https://shaon-blog.herokuapp.com/uploads/image/"+data.picture} alt=""/>  
+        <p>{format(data.date)}</p>
         <h2 className="t">{data.title}</h2>
         <h4 className="d">{data.description}</h4>             
 
