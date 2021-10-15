@@ -26,7 +26,9 @@ export default class Allpsot extends Component {
         
         return (            
             <div>
-                 <HomeCarousel/>               
+                <>
+                <HomeCarousel/>               
+                </>
                     <div className="girds">
                     {this.state.posts.map(post=>
                 <div className="cards">

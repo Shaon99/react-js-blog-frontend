@@ -4,6 +4,8 @@ import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 import Blog from "./Blog";
 import About from "./About";
 import Postdetails from "./Postdetails";
+import Footer from "./Footer";
+
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
    <Route exact path="/blog" component={Blog}/>
    <Route exact path="/" component={Allpost}/>
    </Switch>
-</Router>
+<Footer/>
+   </Router>
+
   );
 }
 

@@ -7,7 +7,7 @@ import Travel2 from "./travel1.jpg"
 
 export default function HomeCarousel() {
     return (
-        <div>
+        <div style={{marginBottom:"40px"}}>
             <Carousel controls={false} fade={true}>
   <Carousel.Item interval={2000} >
     <img  height={500}

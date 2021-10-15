@@ -5,12 +5,11 @@
 .cards{
     transform-style:preserve-3d ;
     min-height: 60vh;
-    width: 24rem;
+    width: 24.6rem;
     box-shadow: 0 10px 10px rgba(107, 102, 102, 0.596),0px 0px 50px rgba(26, 119, 240, 0.2);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 .girds{
 display: grid;
@@ -37,7 +36,7 @@ grid-template-columns: auto auto auto;
 
 }
 .cards h4{
-    font-family: "Montserrat",sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 14px;
     color:#837272;
@@ -79,6 +78,7 @@ grid-template-columns: auto auto auto;
             margin-left: auto;
         }
         
+        
   }
 
  .boximg{
@@ -88,7 +88,7 @@ grid-template-columns: auto auto auto;
 
 .i{
       height: 400px;
-      width: 1100px;
+      width: 100%;
 }
 
 .t{
@@ -102,11 +102,172 @@ grid-template-columns: auto auto auto;
 }
 
 .d{
-    font-family: "Montserrat",sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color:#837272;
+    color:#353232;
     text-align: justify;
     margin-right: 12px;
     word-spacing: normal;
+}
+
+
+.cardComment{
+    transform-style:preserve-3d ;
+    box-shadow: 0 10px 10px rgba(107, 102, 102, 0.596),0px 0px 50px rgba(26, 119, 240, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    background-color: rgb(46, 44, 44);
+}
+.cardComment h6{
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 0rem;
+    margin-left: 10px;
+    color: rgb(248, 248, 248);
+    padding-top: 10px;
+}
+.cardComment small{
+    text-align: left;
+    font-size: 10px;
+    padding: 10px;
+    color: rgb(168, 164, 164);    
+
+}
+
+.textc{
+margin-left: 10px;
+margin-top: 10px;
+border:1px solid #aaa;
+border-radius: 2px;
+margin-bottom: 10px;
+background-color: rgb(46, 44, 44);
+color:white;
+padding-left:10px;
+
+}
+
+.name{
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 30%;
+    border:1px solid #aaa;
+    outline: none;
+    box-sizing: border-box;
+    height:40px;
+    border-radius: 2px;
+    background-color: rgb(46, 44, 44);
+    color:white;
+    padding-left:10px;
+
+
+}
+.email{
+    width: 30%;
+    border:1px solid #aaa;
+    outline: none;
+    box-sizing: border-box;
+    height:40px;
+    border-radius: 2px;
+    background-color: rgb(46, 44, 44);
+    color:white;
+    padding-left:10px;
+
+}
+
+.comment{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(39, 38, 38);
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+
+  }
+  .comment:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 2px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+
+  }
+  .comment:hover:before{
+    opacity: 1;
+  
+  }
+  .comment:hover:active{
+    background: none;
+   
+  }
+  .comment:hover:active:before{
+    filter: blur(2px);
+   
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+  .blogcomment h3{
+    text-align:left;
+    color: rgb(59, 57, 59);
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .blogcomment h5{
+    margin-top: 15px;
+    margin-left: 30px;
+    color: rgb(95, 78, 78);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size:20px;
+    text-transform:capitalize;
+    margin-bottom: 0rem;
+    
+  }
+  .blogcomment p{
+  margin-left: 30px;
+  color: rgb(94, 91, 91);
+  font-family: "Montserrat",sans-serif;
+  font-weight: 200;
+  font-size: .7rem;
+  text-transform:capitalize;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  
+}
+.blogcomment h6{
+  margin-left: 30px;
+  color: rgb(85, 78, 78);
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: .8rem;
+  text-transform:capitalize;
+  margin-top: .5rem;
+  text-align: justify;
+  margin-right: 500px;
 }
